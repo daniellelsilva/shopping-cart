@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(57, 61, 63);
+  color: rgb(253, 253, 255);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+h1 {
+  margin-left: 125px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  justify-content: space-around;
+}
+
+.items {
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 30px;
+  width: 300px;
+}
+
+.item .item__sku {
+  display: none;
+}
+
+.item .item__title {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.item .item__image {
+  width: 70%;
+  align-self: center;
+}
+
+.item .item__add {
+  align-self: center;
+  background-color: rgb(231, 231, 231);
+  border: 0;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  transition-duration: 0.4s;
+  width: 150px;
+}
+
+.item__add:hover {
+  background-color: rgb(42, 72, 73);
+  color: white;
+}
+
+.cart {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-basis: 30%;
+  flex-flow: column wrap;
+  margin: 35px 90px 0 0;
+  height: fit-content;
+}
+
+.cart .cart__title {
+  flex-basis: 1;
+  font-size: 16pt;
+  font-weight: 600;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cart__items {
+  align-self: center;
+  list-style: none;
+  width: 90%;
+}
+
+.cart__item {
+  font-weight: bold;
+  margin: 25px 10px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 30px;
+  text-align: center;
+}
+
+.empty-cart {
+  align-self: center;
+  background-color: rgb(231, 231, 231);
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 7px;
+  width: 50%;
+}
+
+.empty-cart:hover {
+  background-color: rgb(42, 72, 73);
+  color: white;
+}
+
